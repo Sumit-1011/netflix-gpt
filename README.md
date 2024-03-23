@@ -15,6 +15,12 @@
 - created redux Store with userSlice
 - Implement Sign Out
 - Update Profile
+- BugFix: Signup user displayName and pictur update
+- BugFix: If user not logged in redirect to /browse to Login page and vice-versa
+- Unsubscribed to OnAuthStateChange Callback
+- Create the constant files for the Hard coded data
+- Create TMDB account & register the app & get the Api
+- Use the Api in your by fetching it from TMDB Api
 
 # Features
 
