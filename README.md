@@ -27,6 +27,11 @@
 - Fetch trailer video and update the store
 - Embedd the trailer video in Main Container
 - Autoplay the video using autoplay=1&mute=1
+- Build Secondary Component
+- Built Movie List & Card
+- TMDB image CDN url
+- used Popular and Upcoming movies Api with their custom Hooks
+- Improved the Browse Page UI
 
 # Features
 
