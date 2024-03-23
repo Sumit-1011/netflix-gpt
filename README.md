@@ -21,6 +21,12 @@
 - Create the constant files for the Hard coded data
 - Create TMDB account & register the app & get the Api
 - Use the Api in your by fetching it from TMDB Api
+- Custom Hook for NowPlayingMovie
+- Create Movie Slice and Update the store
+- Create the Main and Secondary Container
+- Fetch trailer video and update the store
+- Embedd the trailer video in Main Container
+- Autoplay the video using autoplay=1&mute=1
 
 # Features
 
