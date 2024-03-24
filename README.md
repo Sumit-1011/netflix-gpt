@@ -32,6 +32,8 @@
 - TMDB image CDN url
 - used Popular and Upcoming movies Api with their custom Hooks
 - Improved the Browse Page UI
+- Created the GPT Search Page and GPT Search Bar
+- Created Multi-Lang Feature
 
 # Features
 
