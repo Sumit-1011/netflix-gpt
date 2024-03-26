@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addUser, removeUser } from '../utils/userSlice';
 import { LOGO, SUPPORTED_LANG } from '../utils/constants';
-import { toggleGptSearchView } from '../utils/gptSlice';
+import { clearCart, toggleGptSearchView } from '../utils/gptSlice';
 import { changeLanguage } from '../utils/configSlice';
 
 const Header = () => {
@@ -26,6 +26,10 @@ const Header = () => {
   const handleGptSearch = () => {
     //Toggle Gpt Search View
     dispatch(toggleGptSearchView());
+
+    if (showGptSearch) {
+        dispatch(clearCart());
+    }
   }
 
   const handleLanguageChange = (e) => {
@@ -80,7 +84,7 @@ const Header = () => {
         </div>
       <div className='p-4'>
         <img
-          className='w-12 h-12 m-auto rounded-xl'
+          className='w-12 h-12 m-auto rounded-xl duration-500 hover:scale-125'
           alt='usericon'
           src={user?.photoURL}
         />
