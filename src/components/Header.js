@@ -54,15 +54,15 @@ const Header = () => {
   }, []); 
 
   return (
-  <div className="absolute w-screen px-12 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
+  <div className="absolute w-screen px-12 py-2 bg-gradient-to-b from-black z-10 flex justify-between flex-col md:flex-row">
   <img
-    className="w-48"
+    className="w-48 mx-auto md:mx-4"
     src={LOGO}
     alt='logo'
   />
   {user && (
-    <div className="flex items-center"> {/* Use flex to align items horizontally */}
-        <div className='flex p-2'>
+    <div className="flex items-center justify-between"> {/* Use flex to align items horizontally */}
+        <div className='flex'>
             { showGptSearch && (<select
               className='p-2 m-2 bg-gray-900 text-white'
               onChange={handleLanguageChange}>

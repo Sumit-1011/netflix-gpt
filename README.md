@@ -34,6 +34,12 @@
 - Improved the Browse Page UI
 - Created the GPT Search Page and GPT Search Bar
 - Created Multi-Lang Feature
+- Got Openai Key
+- GPT Search Api Call
+- fetched gptMoviesSuggestion
+- created gptSlice and added data to store
+- Memoization
+- Made site Responsive
 
 # Features
 

@@ -73,6 +73,7 @@ const Login = () => {
       <Header />
       <div className="absolute">
         <img
+          className='h-screen object-cover w-screen'
           src={BG_URL}
           alt='bg-login' />
       </div>
@@ -81,7 +82,7 @@ const Login = () => {
       <div className="flex justify-center items-center h-screen">
         <form
           onSubmit={(e)=> e.preventDefault()}
-          className="relative p-12 bg-black w-3/12 text-center text-white rounded-lg bg-opacity-80">
+          className="relative p-12 bg-black w-8/12 md:w-3/12 text-center text-white rounded-lg bg-opacity-80">
           
           <h1
             className='font-bold text-3xl z-10 mb-4 text-left'>
