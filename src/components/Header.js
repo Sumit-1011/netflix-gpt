@@ -79,7 +79,7 @@ const Header = () => {
               className='py-2 px-2 bg-yellow-400 text-black mr-6 rounded-lg text-lg font-semibold'
               onClick={handleGptSearch}
             >
-            {showGptSearch ? "HomePage" : "GPT Search"}
+            {showGptSearch ? "HomePage" : "AI Search"}
           </button>
         </div>
       <div className='p-4'>
