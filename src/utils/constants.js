@@ -1,5 +1,5 @@
 export const
-    LOGO = 'https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png';
+  LOGO =  "logo.png"
 
 export const
     PHOTO = "https://cdn.openart.ai/stable_diffusion/554ba8635f8930a93702f1f8ace22de9c8a1dbed_2000x2000.webp";
@@ -13,6 +13,7 @@ export const API_OPTIONS = {
 };
 
 export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
+export const GROQ_API_KEY = process.env.REACT_APP_GROQ_API_KEY;
 
 export const IMG_CDN = "https://image.tmdb.org/t/p/w500";
 

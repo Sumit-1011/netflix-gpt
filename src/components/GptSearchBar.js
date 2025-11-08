@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import lang from "../utils/langConstants";
 import { useDispatch, useSelector } from 'react-redux';
-import openai from '../utils/openai';
+// import openai from '../utils/openai';
+import { groqChatCompletion } from '../utils/groq';
 import { API_OPTIONS } from '../utils/constants';
 import { addGptMovieResults } from '../utils/gptSlice';
 
@@ -26,10 +27,11 @@ const GptSearchBar = () => {
 
         const gptQuery = "Act as a Movie Recommendation System and suggest some movies for the Query : " + searchText.current.value + ". Only give me names of 5 movies, comma seperated like the example resluts given ahead. Example Results: Gadar, Sholay, Mela, Golmaal, Phir Hera Pheri"; 
 
-        const gptResults = await openai.chat.completions.create({
-            messages: [{ role: 'user', content: gptQuery }],
-            model: 'gpt-3.5-turbo',
+        const gptResults = await groqChatCompletion({
+            model: "llama-3.1-8b-instant",
+            messages: [{ role: "user", content: gptQuery }],
         });
+
 
         if (!gptResults.choices) {
             // TODO: Write Error Handling
